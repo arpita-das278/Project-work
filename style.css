@@ -246,158 +246,58 @@ p{
     color: white;
     background-color: #0c0c10;
 }
-/* ================= RESPONSIVE DESIGN ================= */
+/* ======= RESPONSIVE ONLY (NO DESIGN CHANGE) ======= */
 
-/* Large screens / small laptops */
 @media (max-width: 1200px) {
     .container {
-        width: 95%;
+        width: 100%;
     }
 
-    .image img {
-        height: 600px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .text {
-        left: 30%;
-        padding-top: 200px;
-    }
-
-    p {
-        padding-left: 150px;
-        padding-right: 150px;
-    }
-
-    .about h1,
-    .about p,
-    .abouts p {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .pic img {
-        width: 350px;
-        padding-right: 50px;
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
-/* Tablets */
 @media (max-width: 992px) {
     nav {
         float: none;
-        text-align: center;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    .image img {
-        height: 500px;
-    }
-
-    .text {
-        left: 25%;
-        padding-top: 180px;
-        font-size: large;
     }
 
     p {
         position: relative;
-        padding-left: 50px;
-        padding-right: 50px;
-        text-align: center;
-    }
-
-    .pic img {
-        float: none;
-        display: block;
-        margin: 20px auto;
-    }
-
-    .pi {
-        float: none;
-        padding: 50px;
-        text-align: center;
-    }
-
-    .footer h1,
-    .footer p,
-    .f,
-    .c {
-        float: none;
-        text-align: center;
-        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
-/* Mobile devices */
 @media (max-width: 768px) {
-    .header h1,
-    .header b {
-        text-align: center;
-        display: block;
+    body {
+        overflow-x: hidden;
     }
 
     .image img {
-        height: 400px;
-        padding-left: 10px;
-        padding-right: 10px;
+        height: auto;
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .text {
-        left: 10%;
-        right: 10%;
-        padding-top: 140px;
-        font-size: medium;
+        position: relative;
+        left: 0;
+        padding-top: 30px;
+        text-align: center;
     }
 
     .arrow-left p,
     .arrow-r p {
         display: none;
     }
-
-    .about h1 {
-        padding-top: 500px;
-        padding-left: 30px;
-    }
-
-    .about p,
-    .abouts p {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .fot {
-        padding-bottom: 100px;
-    }
 }
 
-/* Small mobile */
 @media (max-width: 480px) {
-    nav a {
-        font-size: 16px;
-        padding: 6px 10px;
-    }
-
-    .image img {
-        height: 300px;
-    }
-
-    .text {
-        padding-top: 100px;
-        font-size: small;
-    }
-
-    .footer p {
-        padding-right: 30px;
-    }
-
-    .m {
+    p {
         font-size: 14px;
     }
 }
-
