@@ -1,3 +1,4 @@
+
 *{
     margin : 0px;
     padding: 0px;
@@ -246,29 +247,62 @@ p{
     color: white;
     background-color: #0c0c10;
 }
-/* ======= RESPONSIVE ONLY (NO DESIGN CHANGE) ======= */
+/* ===== RESPONSIVE ONLY – NO ORIGINAL CSS CHANGED ===== */
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .container {
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
     }
 
     img {
         max-width: 100%;
         height: auto;
     }
-}
 
-@media (max-width: 992px) {
-    nav {
-        float: none;
+    .image img {
+        position: relative;
+        padding: 0;
+        height: auto;
     }
 
+    nav {
+        float: none;
+        text-align: center;
+    }
+
+    .text,
     p {
         position: relative;
+        left: 0;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .about h1,
+    .about p,
+    .abouts p {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .pic img,
+    .pi,
+    .footer h1,
+    .footer p,
+    .f,
+    .c {
+        float: none;
+        text-align: center;
+    }
+
+    .arrow-left p,
+    .arrow-r p {
+        display: none;
+    }
 }
-
-
