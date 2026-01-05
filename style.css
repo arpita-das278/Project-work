@@ -306,3 +306,24 @@ p{
         display: none;
     }
 }
+
+/* ===== FOOTER RESPONSIVE FIX ===== */
+@media (max-width: 768px) {
+    .footer h1,
+    .footer p,
+    .f,
+    .c {
+        float: none;
+        width: 100%;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .footer p {
+        padding-right: 20px;
+    }
+
+    .fot {
+        padding-bottom: 60px;
+    }
+}
