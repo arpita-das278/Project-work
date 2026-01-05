@@ -308,6 +308,7 @@ p{
 }
 
 /* ===== FOOTER RESPONSIVE FIX ===== */
+
 @media (max-width: 768px) {
     .footer h1,
     .footer p,
@@ -317,13 +318,24 @@ p{
         width: 100%;
         padding: 15px 20px;
         text-align: center;
+        box-sizing: border-box;
     }
 
     .footer p {
         padding-right: 20px;
     }
 
+    .f {
+        padding-left: 0;
+    }
+
+    .c {
+        padding-left: 0;
+    }
+
     .fot {
-        padding-bottom: 60px;
+        padding-bottom: 80px;
     }
 }
+
+
