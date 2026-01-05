@@ -246,85 +246,41 @@ p{
     color: white;
     background-color: #0c0c10;
 }
-/* ========= RESPONSIVE FIX ========= */
+/* ===== Responsive Fix Only ===== */
 
-/* Prevent horizontal scroll */
 @media (max-width: 1200px) {
-    body {
-        overflow-x: hidden;
-    }
-
     .container {
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
     }
 
     img {
         max-width: 100%;
         height: auto;
     }
-}
 
-/* Tablets */
-@media (max-width: 992px) {
-    nav {
-        float: none;
-        text-align: center;
-        padding-top: 10px;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    .text {
-        left: 25%;
-        padding-top: 180px;
-    }
-
-    p {
-        position: relative;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .pic img {
-        float: none;
-        display: block;
-        margin: 20px auto;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
     .image img {
         position: relative;
-        height: auto;
         padding: 0;
+        height: auto;
     }
 
-    .text {
-        position: relative;
-        left: 0;
-        padding-top: 40px;
-        text-align: center;
-    }
-
+    .text,
     p {
         position: relative;
+        left: 0;
         padding: 10px 20px;
         text-align: center;
     }
 
-    .about h1 {
-        padding-top: 400px;
-        padding-left: 20px;
-    }
-
-    .about p,
-    .abouts p {
-        padding-left: 20px;
-        padding-right: 20px;
+    nav {
+        float: none;
+        text-align: center;
     }
 
     .arrow-left p,
@@ -332,10 +288,11 @@ p{
         display: none;
     }
 
-    .pi {
-        float: none;
-        padding: 40px 20px;
-        text-align: center;
+    .about h1,
+    .about p,
+    .abouts p {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .footer h1,
@@ -348,20 +305,6 @@ p{
     }
 }
 
-/* Small Mobile */
-@media (max-width: 480px) {
-    nav a {
-        font-size: 15px;
-        padding: 6px 10px;
-    }
 
-    .text {
-        font-size: medium;
-    }
-
-    .m {
-        font-size: 14px;
-    }
-}
 
 
